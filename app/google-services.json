@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "364379662016",
+    "firebase_url": "https://sipadat-f5975.firebaseio.com",
+    "project_id": "sipadat-f5975",
+    "storage_bucket": "sipadat-f5975.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364379662016:android:ce30e006bfe80962",
+        "android_client_info": {
+          "package_name": "project.arrik.com.sipadat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "364379662016-5a5h6ck5eis5evikkb3tedr1879b7ced.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "project.arrik.com.sipadat",
+            "certificate_hash": "66C599C7774C11A249C0951F5E5951D0E3169391"
+          }
+        },
+        {
+          "client_id": "364379662016-tiaqfib92g5u50n1tbmfui1cbgr6jl7q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSVNmoDff-q6YcmA8S-mkmw2ga58lS2Jk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "364379662016-tiaqfib92g5u50n1tbmfui1cbgr6jl7q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
