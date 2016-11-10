@@ -123,9 +123,9 @@ public class DataHistoryActivity extends BaseActivity {
                             setupViewPager(viewPager);
                             tabLayout.setupWithViewPager(viewPager);
 
-                            tabLayout.getTabAt(0).setIcon(R.drawable.oxygensymbol);
+                            tabLayout.getTabAt(0).setIcon(R.drawable.thermometer);
                             tabLayout.getTabAt(1).setIcon(R.drawable.thermometer);
-                            tabLayout.getTabAt(2).setIcon(R.drawable.phtest);
+                            tabLayout.getTabAt(2).setIcon(R.drawable.thermometer);
                         }
                     } else {
                         // error in fetching data

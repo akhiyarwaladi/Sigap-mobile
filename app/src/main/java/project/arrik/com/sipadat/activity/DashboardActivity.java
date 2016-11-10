@@ -60,18 +60,18 @@ public class DashboardActivity extends BaseActivity {
     ProgressDialog pDialog;
     Toolbar toolbar;
 
-    @OnClick(R.id.sub)
-    public void suub(){
-        FirebaseMessaging.getInstance().subscribeToTopic("news");
-        Toast.makeText(this, "subscribe press", Toast.LENGTH_SHORT).show();
-    }
-
-    @OnClick(R.id.token)
-    public void token(){
-        String token = FirebaseInstanceId.getInstance().getToken();
-        Toast.makeText(this, "getToken "+token, Toast.LENGTH_SHORT).show();
-        Log.d(TAG, token);
-    }
+//    @OnClick(R.id.sub)
+//    public void suub(){
+//        FirebaseMessaging.getInstance().subscribeToTopic("news");
+//        Toast.makeText(this, "subscribe press", Toast.LENGTH_SHORT).show();
+//    }
+//
+//    @OnClick(R.id.token)
+//    public void token(){
+//        String token = FirebaseInstanceId.getInstance().getToken();
+//        Toast.makeText(this, "getToken "+token, Toast.LENGTH_SHORT).show();
+//        Log.d(TAG, token);
+//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
