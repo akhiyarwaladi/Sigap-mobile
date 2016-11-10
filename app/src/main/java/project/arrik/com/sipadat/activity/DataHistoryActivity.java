@@ -128,7 +128,6 @@ public class DataHistoryActivity extends BaseActivity {
                             tabLayout.getTabAt(2).setIcon(R.drawable.thermometer);
                         }
                     } else {
-                        // error in fetching data
                         Toast.makeText(DataHistoryActivity.this, "" + obj.getJSONObject("error").getString("message"), Toast.LENGTH_LONG).show();
                     }
                 } catch (JSONException e) {

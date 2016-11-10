@@ -2,6 +2,7 @@ package project.arrik.com.sipadat.activity;
 
 import android.animation.ValueAnimator;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -70,8 +71,6 @@ public class DetailActivity extends BaseActivity {
         allDatas = new ArrayList<AllData>();
         getData();
 
-
-
         btnHistory = (Button) findViewById(R.id.btn_history);
         btnHistory.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -111,15 +110,21 @@ public class DetailActivity extends BaseActivity {
                         addBuddiesView(allDatas.get(allDatas.size()-(allDatas.size())));
                         TextView header = (TextView) findViewById(R.id.tv_status);
                         if(Float.parseFloat(Uk) > 0){
-                            header.setText("Irigasi ON");
+                            header.setText(" IRIGASI ON ");
+                            header.setTextColor(Color.WHITE);
+                            header.setBackgroundColor(Color.parseColor("#1BBC9B"));
                         }
                         else if(Float.parseFloat(Uk) == 0){
-                            header.setText("Irigasi OFF");
+                            header.setText(" IRIGASI OFF ");
+                            header.setTextColor(Color.WHITE);
+                            header.setBackgroundColor(Color.RED);
                         }
                         else{
                             Uk = "-1";
                             Log.i("data",""+Uk);
-                            header.setText("Drainase");
+                            header.setText(" DRAINASE ");
+                            header.setTextColor(Color.WHITE);
+                            header.setBackgroundColor(Color.BLUE);
                         }
                     } else {
                         // error in fetching data
@@ -258,7 +263,6 @@ public class DetailActivity extends BaseActivity {
             FirebaseAuth.getInstance().signOut();
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 }

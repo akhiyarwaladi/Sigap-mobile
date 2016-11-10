@@ -148,7 +148,6 @@
                         android:id="@+id/tv_suhu" />
                 </TableRow>
 
-
             </TableLayout>
         </LinearLayout>
         <View
