@@ -144,7 +144,7 @@ public class DoFragment extends Fragment {
             labelSuhu.add(String.valueOf(i+1));
         }
 
-        LineDataSet dataSetSuhu = new LineDataSet(entrySuhu, "mg/L");
+        LineDataSet dataSetSuhu = new LineDataSet(entrySuhu, "cm");
         dataSetSuhu.setColor(Color.parseColor("#009688"));
         dataSetSuhu.setCircleColor(Color.parseColor("#ffcdd2"));
         dataSetSuhu.setCircleColorHole(Color.parseColor("#f44336"));

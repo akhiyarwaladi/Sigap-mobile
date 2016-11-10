@@ -117,7 +117,7 @@ public class PhFragment extends Fragment {
 //        labelSuhu.add("11:40");
 //        labelSuhu.add("11:40");
 
-        LineDataSet dataSetSuhu = new LineDataSet(entrySuhu, "Derajat keasaman");
+        LineDataSet dataSetSuhu = new LineDataSet(entrySuhu, "detik");
         dataSetSuhu.setColor(Color.parseColor("#009688"));
         dataSetSuhu.setCircleColor(Color.parseColor("#ffcdd2"));
         dataSetSuhu.setCircleColorHole(Color.parseColor("#f44336"));

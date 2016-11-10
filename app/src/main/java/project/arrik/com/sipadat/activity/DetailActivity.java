@@ -185,7 +185,6 @@ public class DetailActivity extends BaseActivity {
 //                header.setText("Drainase");
 //            }
 
-
             final int maxValue = 100;
             ProgressBarAnimation animation;
             float nilai;
@@ -195,7 +194,6 @@ public class DetailActivity extends BaseActivity {
                     nilaiSensor.setText(p.getPh());
                     namaSensor.setText("HPc");
                     statusSensor.setText("ON");
-
 
                     nilai = Float.parseFloat(p.getPh());
                     progressBar.setMax(14);
@@ -207,13 +205,12 @@ public class DetailActivity extends BaseActivity {
                     break;
 
                 case 1:
-                    nilaiSensor.setText(p.getDoo());
+                    nilaiSensor.setText(Uk);
                     namaSensor.setText("Uk");
                     statusSensor.setText("ON");
 
-
-
-                    nilai = Float.parseFloat(p.getDoo());
+                    nilai = Float.parseFloat(Uk);
+                    if(nilai<0)nilai=nilai*(-1);
                     progressBar.setMax(100);
                     animation =  new ProgressBarAnimation(progressBar,progressBar.getProgress(),nilai);
                     animation.setDuration(500);
@@ -226,7 +223,6 @@ public class DetailActivity extends BaseActivity {
                     nilaiSensor.setText(p.getOutput());
                     namaSensor.setText("OpTime");
                     statusSensor.setText("ON");
-
 
                     nilai = Float.parseFloat(p.getOutput());
                     progressBar.setMax(12);

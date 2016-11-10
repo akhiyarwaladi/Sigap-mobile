@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:theme="@style/LoginTheme"
     android:layout_width="match_parent"
-    android:background="#08b2fd"
+    android:background="#9E9E9E"
     tools:showIn="@layout/content_login">
 
     <android.support.v7.widget.Toolbar
@@ -161,12 +161,12 @@
         android:layout_below="@+id/tool_bar">
 
         <ImageView
-            android:layout_width="300dp"
-            android:layout_height="115dp"
+            android:layout_width="370dp"
+            android:layout_height="170dp"
             android:id="@+id/imageView"
             android:layout_gravity="center"
-            android:background="#08b2fd"
-            android:src="@drawable/logo_sipadat_white"
+            android:background="#9E9E9E"
+            android:src="@drawable/sigap"
             android:scaleType="fitCenter"
             android:adjustViewBounds="true"/>
     </FrameLayout>
