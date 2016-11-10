@@ -117,6 +117,8 @@ public class DetailActivity extends BaseActivity {
                             header.setText("Irigasi OFF");
                         }
                         else{
+                            Uk = "-1";
+                            Log.i("data",""+Uk);
                             header.setText("Drainase");
                         }
                     } else {
@@ -175,16 +177,6 @@ public class DetailActivity extends BaseActivity {
             TextView nilaiSensor = (TextView) itemView.findViewById(R.id.nilai_sensor);
             TextView statusSensor = (TextView) itemView.findViewById(R.id.status_sensor);
 
-//            if(Float.parseFloat(p.getDoo()) > 0){
-//                header.setText("Irigasi ON");
-//            }
-//            else if(Float.parseFloat(p.getDoo()) == 0){
-//                header.setText("Irigasi OFF");
-//            }
-//            else{
-//                header.setText("Drainase");
-//            }
-
             final int maxValue = 100;
             ProgressBarAnimation animation;
             float nilai;
@@ -196,7 +188,7 @@ public class DetailActivity extends BaseActivity {
                     statusSensor.setText("ON");
 
                     nilai = Float.parseFloat(p.getPh());
-                    progressBar.setMax(14);
+                    progressBar.setMax(10);
                     animation =  new ProgressBarAnimation(progressBar,progressBar.getProgress(),nilai);
                     animation.setDuration(500);
                     progressBar.setAnimation(animation);
@@ -205,13 +197,12 @@ public class DetailActivity extends BaseActivity {
                     break;
 
                 case 1:
-                    nilaiSensor.setText(Uk);
+                    nilaiSensor.setText(p.getDoo());
                     namaSensor.setText("Uk");
                     statusSensor.setText("ON");
 
-                    nilai = Float.parseFloat(Uk);
-                    if(nilai<0)nilai=nilai*(-1);
-                    progressBar.setMax(100);
+                    nilai = Float.parseFloat(p.getDoo());
+                    progressBar.setMax(1);
                     animation =  new ProgressBarAnimation(progressBar,progressBar.getProgress(),nilai);
                     animation.setDuration(500);
                     progressBar.setAnimation(animation);
@@ -225,7 +216,7 @@ public class DetailActivity extends BaseActivity {
                     statusSensor.setText("ON");
 
                     nilai = Float.parseFloat(p.getOutput());
-                    progressBar.setMax(12);
+                    progressBar.setMax(180);
                     animation =  new ProgressBarAnimation(progressBar,progressBar.getProgress(),nilai);
                     animation.setDuration(500);
                     progressBar.setAnimation(animation);
