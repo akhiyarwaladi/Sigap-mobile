@@ -38,14 +38,6 @@ import project.arrik.com.sipadat.app.MyApplication;
 import project.arrik.com.sipadat.helper.MyPreferenceManager;
 import project.arrik.com.sipadat.model.AllData;
 
-//import project.arrik.com.sipadat.app.Config;
-//import project.arrik.com.sipadat.app.EndPoint;
-//import project.arrik.com.sipadat.app.MyApplication;
-//import project.arrik.com.sipadat.helper.MyPreferenceManager;
-
-/**
- * A simple {@link Fragment} subclass.
- */
 public class LogAllFragment extends Fragment {
 
     private String TAG = LogAllFragment.class.getSimpleName();
@@ -55,7 +47,6 @@ public class LogAllFragment extends Fragment {
     public LogAllFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -72,7 +63,6 @@ public class LogAllFragment extends Fragment {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(mAdapter);
         fetchChatRooms();
-
 
         return view;
     }
@@ -134,5 +124,4 @@ public class LogAllFragment extends Fragment {
         //Adding request to request queue
         MyApplication.getInstance().addToRequestQueue(stringRequest);
     }
-
 }
